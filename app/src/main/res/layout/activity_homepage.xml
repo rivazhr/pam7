@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="32dp"
+    android:background="@color/white"
+    android:contextClickable="true"
+    tools:context=".Homepage">
+
+  <SearchView
+      android:id="@+id/searchView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:background="@drawable/btn_search"
+      android:fontFamily="@font/plus_jakarta_sans"
+      android:iconifiedByDefault="false"
+      android:paddingEnd="16dp"
+      android:queryHint="Cari fasilitas yang ingin direservasi"
+      android:textSize="12sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageAvatar" />
+
+  <TextView
+      android:id="@+id/textWelcome"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      android:fontFamily="@font/plus_jakarta_sans"
+      android:text="Selamat Datang,"
+      android:textColor="@color/black"
+      android:textSize="12sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/textName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginBottom="8dp"
+      android:fontFamily="@font/plus_jakarta_sans_bold"
+      android:text="Beby Ayu"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="@+id/imageAvatar"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <ImageView
+      android:id="@+id/imageAvatar"
+      android:layout_width="64dp"
+      android:layout_height="64dp"
+      android:layout_marginEnd="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/avatar" />
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:id="@+id/bottomNavigationView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/base_white"
+      android:padding="16dp"
+      app:itemIconTint="@color/primary"
+      app:itemTextColor="@color/primary"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:menu="@menu/menu" />
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/fasilitas1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:clickable="true"
+      android:contextClickable="true"
+      app:cardBackgroundColor="@color/primary100"
+      app:cardCornerRadius="12dp"
+      app:cardElevation="4dp"
+      app:contentPadding="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+    <LinearLayout
+        android:id="@+id/cardFasilitas1Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/cardFasilitas1Title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="start"
+          android:fontFamily="@font/plus_jakarta_sans_bold"
+          android:text="TV Komputer"
+          android:textColor="@color/black"
+          android:textSize="18dp" />
+
+      <Button
+          android:id="@+id/cardFasilitasBt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom|end"
+          android:layout_marginTop="16dp"
+          android:background="@drawable/btn_primary"
+          android:drawableRight="@drawable/ic_add"
+          android:drawablePadding="8dp"
+          android:drawableTint="@color/base_white"
+          android:fontFamily="@font/plus_jakarta_sans_bold"
+          android:text="Buat Reservasi"
+          android:textAllCaps="false"
+          android:textColor="@color/base_white"
+          android:textSize="16dp" />
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/fasilitas2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:clickable="true"
+      android:contextClickable="true"
+      app:cardBackgroundColor="@color/primary100"
+      app:cardCornerRadius="12dp"
+      app:cardElevation="4dp"
+      app:contentPadding="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/fasilitas1">
+
+    <LinearLayout
+        android:id="@+id/cardFasilitas2Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/cardFasilitas2Title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="start"
+          android:fontFamily="@font/plus_jakarta_sans_bold"
+          android:text="Pump"
+          android:textColor="@color/black"
+          android:textSize="18dp" />
+
+      <Button
+          android:id="@+id/cardFasilitas2Bt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom|end"
+          android:layout_marginTop="16dp"
+          android:background="@drawable/btn_primary"
+          android:drawableRight="@drawable/ic_add"
+          android:drawablePadding="8dp"
+          android:drawableTint="@color/base_white"
+          android:fontFamily="@font/plus_jakarta_sans_bold"
+          android:gravity="center"
+          android:text="Buat Reservasi"
+          android:textAlignment="center"
+          android:textAllCaps="false"
+          android:textColor="@color/base_white"
+          android:textSize="16dp" />
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/daftarReservasi"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:layout_marginTop="16dp"
+      android:clickable="true"
+      android:contextClickable="true"
+      app:cardBackgroundColor="@color/secondary100"
+      app:cardCornerRadius="12dp"
+      app:cardElevation="4dp"
+      app:contentPadding="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/fasilitas2">
+
+    <LinearLayout
+        android:id="@+id/cardDaftarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/daftarReservasiNama"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="start"
+          android:fontFamily="@font/plus_jakarta_sans_bold"
+          android:text="Daftar Reservasi"
+          android:textColor="@color/black"
+          android:textSize="18dp" />
+
+      <Button
+          android:id="@+id/cardDaftarBt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom|end"
+          android:layout_marginTop="16dp"
+          android:background="@drawable/btn_secondary"
+          android:drawableTint="@color/black"
+          android:fontFamily="@font/plus_jakarta_sans_bold"
+          android:gravity="center"
+          android:text="Lihat Daftar"
+          android:textAllCaps="false"
+          android:textColor="@color/black"
+          android:textSize="16dp" />
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
