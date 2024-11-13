@@ -42,17 +42,12 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        Fragment selectedFragment = null;
         if (item.getItemId() == R.id.menuBeranda)
-            selectedFragment = new HomepageFragment();
+            loadFragment(new HomepageFragment());
         else if (item.getItemId() == R.id.menuRiwayat)
-            selectedFragment = new DaftarRiwayatFragment();
+            loadFragment(new DaftarRiwayatFragment());
         else if (item.getItemId() == R.id.menuProfil)
-            selectedFragment = new ProfileFragment();
-
-        if (selectedFragment != null && currentFragment != selectedFragment)
-            loadFragment(selectedFragment);
-
+            loadFragment(new ProfileFragment());
         return true;
     }
 }
