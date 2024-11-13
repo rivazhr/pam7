@@ -5,43 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F9F4FF"
-    tools:context=".FormPeminjamanActivity">
+    tools:context=".AddPeminjamanFragment">
 
-    <!-- Header dengan ikon back dan judul -->
+    <!-- Judul Fragment -->
 
     <ImageButton
         android:id="@+id/btnBack"
-        android:layout_width="29dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
         android:src="@drawable/ic_back"
+        app:tint="#590083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Form input di dalam CardView -->
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
         android:text="Buat Reservasi"
+        android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:textColor="#000000"
-        app:layout_constraintStart_toEndOf="@+id/btnBack"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="8dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Form input di dalam CardView -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardPeminjaman"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="18dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="20dp"
         app:cardCornerRadius="12dp"
@@ -50,7 +52,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="495dp"
             android:orientation="vertical">
 
             <!-- Header dengan ikon dan teks -->
@@ -68,18 +70,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mohon isi data di bawah ini sesuai dengan KTM Anda"
                     android:layout_marginStart="8dp"
-                    android:textColor="#590083"/>
+                    android:text="Mohon isi data di bawah ini sesuai dengan KTM Anda"
+                    android:textColor="#590083"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <!-- Nama Peminjam -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nama Peminjam"
                 android:layout_marginTop="16dp"
-                app:boxBackgroundMode="outline">
+                android:hint="Nama Peminjam"
+                android:textColorHint="@color/purple_500"
+                app:boxBackgroundMode="outline"
+                app:hintTextColor="@color/purple_500">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etNamaPeminjam"
@@ -93,48 +98,54 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="NIM Peminjam"
                 android:layout_marginTop="8dp"
-                app:boxBackgroundMode="outline">
+                android:hint="NIM Peminjam"
+                android:textColorHint="@color/purple_500"
+                app:boxBackgroundMode="outline"
+                app:hintTextColor="@color/purple_500">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etNimPeminjam"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
-                    android:textColor="#000000"/>
+                    android:textColor="#000000" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <!-- Prodi Peminjam -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Prodi Peminjam"
                 android:layout_marginTop="8dp"
-                app:boxBackgroundMode="outline">
+                android:hint="Prodi Peminjam"
+                android:textColorHint="@color/purple_500"
+                app:boxBackgroundMode="outline"
+                app:hintTextColor="@color/purple_500">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etProdiPeminjam"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
-                    android:textColor="#000000"/>
+                    android:textColor="#000000" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <!-- Nomor HP -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nomor HP"
                 android:layout_marginTop="8dp"
-                app:boxBackgroundMode="outline">
+                android:hint="Nomor HP"
+                android:textColorHint="@color/purple_500"
+                app:boxBackgroundMode="outline"
+                app:hintTextColor="@color/purple_500">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etNoHp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="phone"
-                    android:textColor="#000000"/>
+                    android:textColor="#000000" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <!-- Pilih Sesi -->
@@ -142,31 +153,32 @@
                 android:id="@+id/spinnerSesi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pilih Sesi"
                 android:layout_marginTop="8dp"
-                android:backgroundTint="#590083"/>
+                android:backgroundTint="#590083"
+                android:text="Pilih Sesi"
+                android:textColorHint="@color/purple_500"
+                app:hintTextColor="@color/purple_500" />
 
             <!-- Jumlah Stik -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
                 android:gravity="center_vertical"
-                android:layout_marginTop="8dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="Jumlah Stik"
-                    android:textColor="#000000"
-                    android:layout_weight="1"/>
+                    android:textColor="@color/purple_500" />
 
                 <ImageButton
                     android:id="@+id/btnMinus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    android:scrollbarSize="2dp"
+                    android:background="@android:color/transparent"
                     android:src="@drawable/ic_minus"
                     app:tint="#590083" />
 
@@ -177,31 +189,30 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
                     android:text="0"
-                    android:textColor="#000000"/>
+                    android:textColor="@color/purple_500" />
 
                 <ImageButton
                     android:id="@+id/btnPlus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    android:scrollbarSize="2dp"
+                    android:background="@android:color/transparent"
                     android:src="@drawable/ic_plus"
                     app:tint="#590083" />
             </LinearLayout>
 
-            <!-- Unggah KTM (Only Button, No Text Input) -->
+            <!-- Unggah KTM -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:text="Unggah KTM"
-                android:textColor="#590083"
-                android:layout_marginTop="16dp"/>
+                android:textColor="@color/purple_500" />
 
             <ImageButton
                 android:id="@+id/btnUploadKtm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?attr/selectableItemBackgroundBorderless"
+                android:background="@android:color/transparent"
                 android:src="@drawable/ic_upload"
                 app:tint="#590083" />
         </LinearLayout>
@@ -218,8 +229,8 @@
         android:text="Kirim"
         android:textColor="#FFFFFF"
         android:backgroundTint="#590083"
-        app:layout_constraintTop_toBottomOf="@+id/cardPeminjaman"
+        app:layout_constraintTop_toBottomOf="@id/cardPeminjaman"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

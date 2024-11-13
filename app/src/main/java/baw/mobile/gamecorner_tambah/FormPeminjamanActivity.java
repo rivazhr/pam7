@@ -35,7 +35,7 @@ public class FormPeminjamanActivity extends AppCompatActivity {
 
     private ImageButton btnBack, btnMinus, btnPlus, btnUploadKtm;
     private TextView tvTitle, tvJumlahStik;
-    private EditText etNamaPeminjam, etNimPeminjam, etProdiPeminjam, etNoHp, etKtm;
+    private EditText etNamaPeminjam, etNimPeminjam, etProdiPeminjam, etNoHp;
     private Spinner spinnerSesi;
     private Button btnKirim;
 
@@ -59,7 +59,6 @@ public class FormPeminjamanActivity extends AppCompatActivity {
         etNimPeminjam = findViewById(R.id.etNimPeminjam);
         etProdiPeminjam = findViewById(R.id.etProdiPeminjam);
         etNoHp = findViewById(R.id.etNoHp);
-        etKtm = findViewById(R.id.etKtm);
         btnMinus = findViewById(R.id.btnMinus);
         btnPlus = findViewById(R.id.btnPlus);
         tvJumlahStik = findViewById(R.id.tvJumlahStik);
@@ -135,7 +134,7 @@ public class FormPeminjamanActivity extends AppCompatActivity {
         String noHp = etNoHp.getText().toString();
         String sesi = spinnerSesi.getSelectedItem().toString();
         String jumlahStikStr = String.valueOf(jumlahStik);
-        String ktm = etKtm.getText().toString();
+
 
         // Membuat request dengan Volley
         // Create request with Volley
@@ -179,9 +178,7 @@ public class FormPeminjamanActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
-            // Display selected image path in EditText `etKtm`
-            etKtm.setText(data.getData().toString());
-            Toast.makeText(this, "KTM image selected successfully!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Gambar KTM berhasil dipilih!", Toast.LENGTH_SHORT).show();
         }
     }
 }
