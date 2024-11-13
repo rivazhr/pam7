@@ -34,7 +34,9 @@ public class HomepageFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         MainActivity ma = (MainActivity) getActivity();
-        if (ma != null)
+        if (ma != null) {
             ma.loadFragment(new DaftarRiwayatFragment());
+            ma.bottomNavigationView.setSelectedItemId(R.id.menuRiwayat);
+        }
     }
 }

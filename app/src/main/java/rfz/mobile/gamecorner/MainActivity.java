@@ -1,16 +1,20 @@
 package rfz.mobile.gamecorner;
 
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
-    private BottomNavigationView bottomNavigationView;
+    protected BottomNavigationView bottomNavigationView;
     private FragmentManager fm;
     private Fragment currentFragment;
 
@@ -26,38 +30,29 @@ public class MainActivity extends AppCompatActivity {
         currentFragment = new HomepageFragment();
         loadFragment(new HomepageFragment());
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
-            Fragment selectedFragment = null;
-
-            if (item.getItemId() == R.id.menuBeranda)
-                selectedFragment = new HomepageFragment();
-            else if (item.getItemId() == R.id.menuRiwayat)
-                selectedFragment = new DaftarRiwayatFragment();
-            else if (item.getItemId() == R.id.menuProfil)
-                selectedFragment = new ProfileFragment();
-
-            if (selectedFragment != null && currentFragment != selectedFragment) {
-                loadFragment(selectedFragment);
-            }
-
-            return true;
-        });
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
     }
 
     protected void loadFragment(Fragment fragment) {
         FragmentTransaction ft = fm.beginTransaction();
-
-        if (currentFragment != null) {
-            ft.hide(currentFragment);
-        }
-
-        if (!fragment.isAdded()) {
-            ft.add(R.id.fragment_layout, fragment);
-        } else {
-            ft.show(fragment);
-        }
-
-        currentFragment = fragment;
+        ft.replace(R.id.fragment_layout, fragment);
+        ft.addToBackStack(null);
         ft.commit();
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Fragment selectedFragment = null;
+        if (item.getItemId() == R.id.menuBeranda)
+            selectedFragment = new HomepageFragment();
+        else if (item.getItemId() == R.id.menuRiwayat)
+            selectedFragment = new DaftarRiwayatFragment();
+        else if (item.getItemId() == R.id.menuProfil)
+            selectedFragment = new ProfileFragment();
+
+        if (selectedFragment != null && currentFragment != selectedFragment)
+            loadFragment(selectedFragment);
+
+        return true;
     }
 }
