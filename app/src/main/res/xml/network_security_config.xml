@@ -7,8 +7,21 @@
     </domain-config>
 </network-security-config>
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <domain includeSubdomains="true">192.168.56.1</domain> <!-- Ganti dengan alamat IP yang sesuai -->
+        <domain includeSubdomains="true">localhost</domain>
+    </domain-config>
+</network-security-config>
+=======
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
         <domain includeSubdomains="true">localhost</domain>
         <domain includeSubdomains="true">10.0.2.2</domain> <!-- untuk emulator Android -->
     </domain-config>
 </network-security-config>
 >>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+<<<<<<< HEAD
+=======
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a

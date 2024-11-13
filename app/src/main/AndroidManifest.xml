@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
     package="baw.mobile.gamecorner_tambah">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -18,6 +24,11 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
 =======
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -44,17 +55,32 @@
             android:name=".MainActivity"
             android:exported="true">
 >>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+<<<<<<< HEAD
+=======
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
         <activity android:name=".FormPeminjamanActivity" ></activity>
         <activity android:name=".SuccessActivity"></activity>
     </application>
 
 </manifest>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
 =======
 
         <meta-data
@@ -64,3 +90,7 @@
 
 </manifest>
 >>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+<<<<<<< HEAD
+=======
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a

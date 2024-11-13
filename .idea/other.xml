@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
   <component name="direct_access_persist.xml">
     <option name="deviceSelectionList">
       <list>
@@ -326,9 +332,18 @@
         </PersistentDeviceSelectionData>
       </list>
     </option>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
 =======
   <component name="ScreenshotViewer">
     <option name="frameScreenshot" value="true" />
 >>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+<<<<<<< HEAD
+=======
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
   </component>
 </project>

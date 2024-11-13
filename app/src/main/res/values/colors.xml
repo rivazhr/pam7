@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
     <color name="purple_200">#E7D6F7</color>
     <color name="purple_500">#2A0C54</color>
     <color name="yellow_500">#F7E7A4</color>
     <color name="white">#FFFFFF</color>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+</resources>
+=======
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
 </resources>
 =======
     <color name="black">#FF000000</color>
@@ -22,3 +34,7 @@
     <color name="transparent">#00000000</color>
 </resources>
 >>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+<<<<<<< HEAD
+=======
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a

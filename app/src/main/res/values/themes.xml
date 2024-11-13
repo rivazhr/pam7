@@ -3,14 +3,31 @@
 <<<<<<< HEAD
     <style name="Theme.GameCorner_Tambah" parent="Theme.AppCompat.Light.NoActionBar">
 =======
+<<<<<<< HEAD
     <style name="Base.Theme.GameCorner" parent="Theme.AppCompat.Light.NoActionBar">
 >>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+=======
+<<<<<<< HEAD
+    <style name="Theme.GameCorner_Tambah" parent="Theme.AppCompat.Light.NoActionBar">
+=======
+    <style name="Base.Theme.GameCorner" parent="Theme.AppCompat.Light.NoActionBar">
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
     <style name="Theme.GameCorner" parent="Base.Theme.GameCorner" />
 >>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+=======
+<<<<<<< HEAD
+=======
+    <style name="Theme.GameCorner" parent="Base.Theme.GameCorner" />
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
 </resources>

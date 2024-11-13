@@ -22,6 +22,15 @@ dependencyResolutionManagement {
 <<<<<<< HEAD
 rootProject.name = "GameCorner_Tambah"
 =======
+<<<<<<< HEAD
 rootProject.name = "Game Corner"
 >>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+=======
+<<<<<<< HEAD
+rootProject.name = "GameCorner_Tambah"
+=======
+rootProject.name = "Game Corner"
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
 include ':app'

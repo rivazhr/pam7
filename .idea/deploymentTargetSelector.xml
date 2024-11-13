@@ -6,6 +6,11 @@
         <option name="selectionMode" value="DROPDOWN" />
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
         <DropdownSelection timestamp="2024-11-05T16:45:10.205021700Z">
           <Target type="BOOT_WITH_SNAPSHOT">
             <handle>
@@ -16,6 +21,10 @@
         </DropdownSelection>
         <DialogSelection />
 >>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+<<<<<<< HEAD
+=======
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
       </SelectionState>
     </selectionStates>
   </component>

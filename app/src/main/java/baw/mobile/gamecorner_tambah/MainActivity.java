@@ -6,6 +6,10 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+<<<<<<< HEAD
+import androidx.fragment.app.FragmentTransaction;
+=======
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,11 +29,16 @@ public class MainActivity extends AppCompatActivity {
         btnPinjamKomputer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
+                // Menampilkan AddPeminjamanFragment
+                showAddPeminjamanFragment("Komputer");
+=======
                 // Membuat intent untuk berpindah ke FormPeminjamanActivity
                 Intent intent = new Intent(MainActivity.this, FormPeminjamanActivity.class);
                 // Jika perlu, data ditambahkan ke intent
                 intent.putExtra("fasilitas", "Komputer");
                 startActivity(intent);
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
             }
         });
 
@@ -37,6 +46,36 @@ public class MainActivity extends AppCompatActivity {
         btnPinjamPump.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
+                // Menampilkan AddPeminjamanFragment
+                showAddPeminjamanFragment("Pump");
+            }
+        });
+    }
+
+    private void showAddPeminjamanFragment(String fasilitas) {
+        AddPeminjamanFragment fragment = new AddPeminjamanFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString("fasilitas", fasilitas);
+        fragment.setArguments(bundle);
+
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+
+        // Sembunyikan komponen lain dan tampilkan fragment_container
+        findViewById(R.id.tvWelcome).setVisibility(View.GONE);
+        findViewById(R.id.tvUsername).setVisibility(View.GONE);
+        findViewById(R.id.imgProfile).setVisibility(View.GONE);
+        findViewById(R.id.etSearch).setVisibility(View.GONE);
+        findViewById(R.id.frameKomputer).setVisibility(View.GONE);
+        findViewById(R.id.framePump).setVisibility(View.GONE);
+        findViewById(R.id.btnLihatDaftar).setVisibility(View.GONE);
+        findViewById(R.id.bottomNavigationView).setVisibility(View.GONE);
+        findViewById(R.id.fragment_container).setVisibility(View.VISIBLE);
+    }
+=======
                 // Membuat intent untuk berpindah ke FormPeminjamanActivity
                 Intent intent = new Intent(MainActivity.this, FormPeminjamanActivity.class);
                 // Jika perlu, data ditambahkan ke intent
@@ -45,4 +84,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
 }

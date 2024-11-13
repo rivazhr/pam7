@@ -1,8 +1,20 @@
 <resources>
 <<<<<<< HEAD
     <string name="app_name">GameCorner_Tambah</string>
+<<<<<<< HEAD
+=======
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+=======
+<<<<<<< HEAD
+    <string name="app_name">GameCorner_Tambah</string>
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
 =======
     <string name="app_name">Game Corner</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 >>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+<<<<<<< HEAD
+=======
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
+>>>>>>> 8cac18a9c17dc2401b7dd7d509491761afbbdd2a
 </resources>
