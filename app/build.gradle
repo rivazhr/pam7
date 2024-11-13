@@ -3,11 +3,19 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     namespace 'baw.mobile.gamecorner_tambah'
     compileSdk 34
 
     defaultConfig {
         applicationId "baw.mobile.gamecorner_tambah"
+=======
+    namespace 'rfz.mobile.gamecorner'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "rfz.mobile.gamecorner"
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
         minSdk 24
         targetSdk 34
         versionCode 1
@@ -26,6 +34,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+<<<<<<< HEAD
+=======
+
+    buildFeatures {
+        viewBinding true
+    }
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
 }
 
 dependencies {
@@ -37,6 +52,7 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+<<<<<<< HEAD
     implementation platform('com.google.firebase:firebase-bom:32.1.0')
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
@@ -50,4 +66,10 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.8'
 
 
+=======
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
 }

@@ -1,6 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<<<<<<< HEAD
     <style name="Base.Theme.GameCorner_Tambah" parent="Theme.Material3.DayNight.NoActionBar">
+=======
+    <style name="Base.Theme.GameCorner" parent="Theme.Material3.DayNight.NoActionBar">
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>

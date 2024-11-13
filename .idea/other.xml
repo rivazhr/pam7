@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="direct_access_persist.xml">
     <option name="deviceSelectionList">
       <list>
@@ -325,5 +326,9 @@
         </PersistentDeviceSelectionData>
       </list>
     </option>
+=======
+  <component name="ScreenshotViewer">
+    <option name="frameScreenshot" value="true" />
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
   </component>
 </project>

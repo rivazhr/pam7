@@ -1,8 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<<<<<<< HEAD
     <style name="Theme.GameCorner_Tambah" parent="Theme.AppCompat.Light.NoActionBar">
+=======
+    <style name="Base.Theme.GameCorner" parent="Theme.AppCompat.Light.NoActionBar">
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+<<<<<<< HEAD
+=======
+    <style name="Theme.GameCorner" parent="Base.Theme.GameCorner" />
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
 </resources>
