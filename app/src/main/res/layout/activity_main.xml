@@ -2,6 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F9F4FF"
@@ -58,6 +62,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginTop="16dp"
         android:drawablePadding="10dp"
+<<<<<<< HEAD
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"/>
@@ -65,11 +70,64 @@
     <!-- FrameLayout Container for CardView Komputer -->
     <FrameLayout
         android:id="@+id/frameKomputer"
+=======
+        android:text="Cari fasilitas..."
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+
+    <!-- CardView untuk Fasilitas "Komputer" -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardKomputer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/etSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#F5E1FF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Komputer"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnPinjamKomputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#590083"
+                android:text="Pinjam"
+                android:textColor="#FFFFFF"
+                android:drawableRight="@drawable/ic_add"
+                android:padding="10dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView untuk Fasilitas "Pump" -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPump"
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="16dp"
+<<<<<<< HEAD
         app:layout_constraintTop_toBottomOf="@+id/etSearch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -159,6 +217,41 @@
     </FrameLayout>
 
     <!-- Button for Lihat Daftar Peminjaman -->
+=======
+        app:layout_constraintTop_toBottomOf="@+id/cardKomputer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#F5E1FF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pump"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnPinjamPump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#590083"
+                android:text="Pinjam"
+                android:textColor="#FFFFFF"
+                android:drawableRight="@drawable/ic_add"
+                android:padding="10dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Tombol untuk Lihat Daftar Peminjaman -->
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
     <Button
         android:id="@+id/btnLihatDaftar"
         android:layout_width="0dp"
@@ -167,12 +260,17 @@
         android:backgroundTint="#FFEB85"
         android:text="Lihat Daftar"
         android:textColor="#2A0C54"
+<<<<<<< HEAD
         app:layout_constraintTop_toBottomOf="@+id/framePump"
+=======
+        app:layout_constraintTop_toBottomOf="@+id/cardPump"
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp" />
 
+<<<<<<< HEAD
     <!-- FragmentContainerView for displaying AddPeminjamanFragment -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container"
@@ -184,6 +282,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:visibility="gone" />
 
+=======
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
     <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -198,3 +298,38 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+<<<<<<< HEAD
+=======
+=======
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_white"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white"
+        android:padding="16dp"
+        app:itemIconTint="@color/primary"
+        app:itemTextColor="@color/primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2

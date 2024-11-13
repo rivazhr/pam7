@@ -4,6 +4,21 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        <DropdownSelection timestamp="2024-11-05T16:45:10.205021700Z">
+          <Target type="BOOT_WITH_SNAPSHOT">
+            <handle>
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\Lenovo\.android\avd\Pixel_6_Pro_API_34.avd" />
+            </handle>
+            <Snapshot name="snap_2024-09-18_21-51-07" path="C:\Users\Lenovo\.android\avd\Pixel_6_Pro_API_34.avd\snapshots\snap_2024-09-18_21-51-07" />
+          </Target>
+        </DropdownSelection>
+        <DialogSelection />
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
       </SelectionState>
     </selectionStates>
   </component>

@@ -5,10 +5,19 @@
 -->
 <data-extraction-rules>
     <cloud-backup>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
         <!-- TODO: Use <include> and <exclude> to control what is backed up.
         <include .../>
         <exclude .../>
         -->
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
     </cloud-backup>
     <!--
     <device-transfer>

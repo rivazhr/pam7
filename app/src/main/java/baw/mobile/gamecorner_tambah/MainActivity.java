@@ -6,7 +6,10 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+<<<<<<< HEAD
 import androidx.fragment.app.FragmentTransaction;
+=======
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,8 +29,16 @@ public class MainActivity extends AppCompatActivity {
         btnPinjamKomputer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 // Menampilkan AddPeminjamanFragment
                 showAddPeminjamanFragment("Komputer");
+=======
+                // Membuat intent untuk berpindah ke FormPeminjamanActivity
+                Intent intent = new Intent(MainActivity.this, FormPeminjamanActivity.class);
+                // Jika perlu, data ditambahkan ke intent
+                intent.putExtra("fasilitas", "Komputer");
+                startActivity(intent);
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
             }
         });
 
@@ -35,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btnPinjamPump.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 // Menampilkan AddPeminjamanFragment
                 showAddPeminjamanFragment("Pump");
             }
@@ -63,4 +75,14 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.bottomNavigationView).setVisibility(View.GONE);
         findViewById(R.id.fragment_container).setVisibility(View.VISIBLE);
     }
+=======
+                // Membuat intent untuk berpindah ke FormPeminjamanActivity
+                Intent intent = new Intent(MainActivity.this, FormPeminjamanActivity.class);
+                // Jika perlu, data ditambahkan ke intent
+                intent.putExtra("fasilitas", "Pump");
+                startActivity(intent);
+            }
+        });
+    }
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
 }

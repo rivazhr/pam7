@@ -1,5 +1,13 @@
 [versions]
+<<<<<<< HEAD
 agp = "8.5.2"
+=======
+<<<<<<< HEAD
+agp = "8.5.2"
+=======
+agp = "8.6.0"
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
+>>>>>>> 815c308d01620dd13c356003cd44ca7ae8471aa2
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
