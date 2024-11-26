@@ -6,8 +6,19 @@
     tools:context=".ProfileFragment">
 
     <TextView
+        android:id="@+id/navigation"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="@color/base_white"
+        android:elevation="4dp"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:paddingStart="16dp"
+        android:paddingTop="55dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="20dp"
+        android:shadowColor="@color/black"
+        android:text="Profil"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
 </FrameLayout>
