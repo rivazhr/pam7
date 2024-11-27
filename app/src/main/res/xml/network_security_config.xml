@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
     <domain-config cleartextTrafficPermitted="true">
+<<<<<<< HEAD
         <domain includeSubdomains="true">192.168.56.1</domain> <!-- Ganti dengan alamat IP yang sesuai -->
         <domain includeSubdomains="true">localhost</domain>
     </domain-config>
 </network-security-config>
+=======
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain> <!-- untuk emulator Android -->
+    </domain-config>
+</network-security-config>
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89

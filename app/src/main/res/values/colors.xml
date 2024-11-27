@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <color name="purple_200">#E7D6F7</color>
     <color name="purple_500">#2A0C54</color>
     <color name="yellow_500">#F7E7A4</color>
     <color name="white">#FFFFFF</color>
+=======
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="base_white">#FAFAFA</color>
+    <color name="primary">#551A5F</color>
+    <color name="primary100">#F2DDF6</color>
+    <color name="secondary">#E2D284</color>
+    <color name="secondary100">#F8F4E0</color>
+    <color name="neutrals100">#E3E3E3</color>
+    <color name="neutrals200">#CCCBCB</color>
+    <color name="neutrals400">#9F9C9C</color>
+    <color name="error">#E4626F</color>
+    <color name="error200">#C03744</color>
+    <color name="transparent">#00000000</color>
+>>>>>>> e6c9e731ac591721191cfbb7b850ca1709a7eb89
 </resources>
