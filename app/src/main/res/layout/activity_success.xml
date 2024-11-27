@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#F9F4FF">
+
+    <!-- Ikon Sukses -->
+    <ImageView
+        android:id="@+id/iconSuccess"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_success"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Success Icon" />
+
+    <!-- Teks Berhasil -->
+    <TextView
+        android:id="@+id/tvSuccessMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data berhasil disimpan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#590083"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Tombol Kembali -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kembali Ke Halaman Utama"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#590083"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Tombol Lihat Data -->
+    <Button
+        android:id="@+id/btnCheckData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Data yang Berhasil Diinput"
+        android:textColor="#590083"
+        android:backgroundTint="#D3AED9"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+</LinearLayout>

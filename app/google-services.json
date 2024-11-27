@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "366965753715",
+    "firebase_url": "https://pamd-da691-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pamd-da691",
+    "storage_bucket": "pamd-da691.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366965753715:android:d583115c84642831a32706",
+        "android_client_info": {
+          "package_name": "baw.mobile.firebase_createreservation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAenHUHEr57mwOEM9DcCKJykwQ9-4JQqFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366965753715:android:dc4c8fe78db4188ba32706",
+        "android_client_info": {
+          "package_name": "baw.mobile.ponbuk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAenHUHEr57mwOEM9DcCKJykwQ9-4JQqFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
