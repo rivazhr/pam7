@@ -9,6 +9,7 @@
     android:layout_marginTop="16dp"
     android:layout_marginEnd="16dp"
     android:background="@drawable/card_riwayat"
+    android:clickable="true"
     android:padding="16dp">
 
     <TextView
@@ -18,7 +19,7 @@
         android:fontFamily="@font/plus_jakarta_sans_semibold"
         android:text="Opsi"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +31,7 @@
         android:fontFamily="@font/plus_jakarta_sans_semibold"
         android:text="Tanggal"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,7 +58,7 @@
         android:fontFamily="@font/plus_jakarta_sans_bold"
         android:text="Nama"
         android:textColor="@color/black"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/ivIcon"
         app:layout_constraintTop_toTopOf="@+id/ivIcon" />
 
@@ -68,7 +69,7 @@
         android:fontFamily="@font/plus_jakarta_sans"
         android:text="Sesi (Waktu)"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/ivIcon"
         app:layout_constraintStart_toStartOf="@+id/tvNama" />
 
@@ -91,9 +92,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/plus_jakarta_sans"
-        android:text="Alat"
+        android:text="Stik"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vGaris" />
 
@@ -105,7 +106,7 @@
         android:fontFamily="@font/plus_jakarta_sans"
         android:text="Nominalx"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tvAlat" />
 
@@ -121,6 +122,7 @@
         android:text="Batalkan"
         android:textAllCaps="false"
         android:textColor="@color/base_white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvJumlahAlat" />
 

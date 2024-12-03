@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiwayatTambah">
+
+    <TextView
+        android:id="@+id/tvNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_white"
+        android:drawableLeft="@drawable/ic_back"
+        android:drawablePadding="8dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:outlineProvider="background"
+        android:paddingStart="16dp"
+        android:paddingTop="55dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="20dp"
+        android:shadowColor="@color/black"
+        android:text="Buat Reservasi - "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/vTambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tvNav"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/tvCreateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary200"
+            android:drawableLeft="@drawable/ic_create"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/plus_jakarta_sans_bold"
+            android:padding="16dp"
+            android:text="Mohon isi data di bawah ini sesuai dengan KTM Anda"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primary100"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvNamaPeminjam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_jakarta_sans_semibold"
+                android:labelFor="@id/etNamaPeminjam"
+                android:text="Nama Peminjam"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etNamaPeminjam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:fontFamily="@font/plus_jakarta_sans"
+                android:hint="Masukkan nama lengkap"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvNimPeminjam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_jakarta_sans_semibold"
+                android:labelFor="@id/etNimPeminjam"
+                android:text="NIM Peminjam"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etNimPeminjam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:fontFamily="@font/plus_jakarta_sans"
+                android:hint="Masukkan nama lengkap"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tvProdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_jakarta_sans_semibold"
+                android:labelFor="@id/etProdi"
+                android:text="Prodi Peminjam"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etProdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:fontFamily="@font/plus_jakarta_sans"
+                android:hint="Masukkan nama program studi"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvNotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_jakarta_sans_semibold"
+                android:labelFor="@id/etNamaPeminjam"
+                android:text="Nomor HP"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etNotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:fontFamily="@font/plus_jakarta_sans"
+                android:hint="Masukkan nomor HP"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvPilihSesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_jakarta_sans_semibold"
+                android:labelFor="@id/rgPilihSesi"
+                android:text="Pilih Sesi"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:id="@+id/rgPilihSesi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:importantForAccessibility="yes">
+
+                <RadioButton
+                    android:id="@+id/sesi1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/primary"
+                    android:fontFamily="@font/plus_jakarta_sans"
+                    android:text="Sesi 1 (08.00 - 10.00)"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/sesi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/primary"
+                    android:clickable="true"
+                    android:fontFamily="@font/plus_jakarta_sans"
+                    android:text="Sesi 2 (10.00 - 12.00)"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/sesi3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/primary"
+                    android:fontFamily="@font/plus_jakarta_sans"
+                    android:text="Sesi 3 (13.00 - 15.00)"
+                    android:textColor="@color/black" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvTambahAlat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plus_jakarta_sans_semibold"
+                android:labelFor="@id/rgPilihSesi"
+                android:text="Jumlah Stik"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:id="@+id/rgPilihJumlahStik"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/stik1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/primary"
+                    android:inputType="number"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/stik2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/primary"
+                    android:inputType="number"
+                    android:text="2" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/plus_jakarta_sans_semibold"
+            android:padding="16dp"
+            android:text="Buat Reservasi"
+            android:textAllCaps="false"
+            android:textColor="@color/base_white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

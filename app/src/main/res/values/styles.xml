@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="bottomNavStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+    <style name="selectedBottomNavStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="android:fontFamily">@font/plus_jakarta_sans_bold</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

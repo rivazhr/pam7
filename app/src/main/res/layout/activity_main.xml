@@ -15,6 +15,8 @@
         android:background="@color/base_white"
         android:padding="16dp"
         app:itemIconTint="@color/primary"
+        app:itemTextAppearanceActive="@style/selectedBottomNavStyle"
+        app:itemTextAppearanceInactive="@style/bottomNavStyle"
         app:itemTextColor="@color/primary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

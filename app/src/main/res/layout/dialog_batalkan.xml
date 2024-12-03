@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_rounded"
+    android:padding="32dp">
+
+    <ImageView
+        android:id="@+id/ivIconDialogBatalkan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_warning" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="Apakah Anda yakin?"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/plus_jakarta_sans_semibold"
+        android:text="Tindakan ini tidak dapat dikembalikan"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnYes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_error"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="Hapus Sesi"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="Kembali"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+</LinearLayout>

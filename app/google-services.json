@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "291383515832",
+    "project_id": "game-corner7",
+    "storage_bucket": "game-corner7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291383515832:android:be567598921ad08b16b24d",
+        "android_client_info": {
+          "package_name": "rfz.mobile.gamecorner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL3wye54fRDt0siS4JqURS563AEE1uZJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
